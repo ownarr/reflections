@@ -1,0 +1,61 @@
+git - command prompt
+github - versioning system
+FC old.js new.js - comparing two individual files for differences
+echo 'alias subl="C:/Program\ Files/Sublime\ Text\ 2/sublime_text.exe"' >> ~/.bashrc - vytvoření aliasu pro spuštění souboru
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+	you can try different strategies in creating an application. If it doesnt work out, you can return some steps back and dont have to start over. Other than that, you can find errors more easily, if you broke one part of code that worked before. Also old lines of codes, that are not yet specialized can be reused in new apps, or objects. You also document your creative process and can learn from it or improve it next time. It also creates space for cooperation between several developers. It secures your code.
+
+Commit - a new version of software
+	-fixing a bug
+	-add a new cool feature
+	-improve user documentation
+
+	-One commit per logical change	
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+	Well automatic saving is really a protection against forgetfullness and in some measure against mistakes. Writing a code and creating a word document are two fairly different undertakings. For code you might actively use those older versions to build on them for new features or different apps altogather, whereas with document you probably use them only when sh*t hits the fan - therefore you dont need to invest into it that much. The investment would not be efective.
+
+Repository - a database containing complete history of certain project
+	commit of several files at once, which are interlinked
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+	Because those files are interlinked. They have asociations between each other. They cannot work independently.
+
+commands
+	git clone *url*
+	git log - listing of commits
+		q - ending log session
+	To get colored diff output, run git config --global color.ui auto
+	git diff *idOld* *idNew* - showing differences between commits
+
+How can you use the commands git log and git diff to view the history of files?
+	Pretty-fucking-badly. God this is so awful I want to cut my veins. Unintuitive as fuck. Ok several things:
+	1. You have to use the git bash maximized, else it is really cluttered and you will need to scroll a lot. Like way-fucking-lot
+	2. you can not freaking scroll with your mousewheel or by pulling a bar on the right. You got to do that by arrow keys, or by page up/ page down. Freaking slow and inaccurate as it gets, so prepare for that shit punk.
+	3. you got to copy those IDs by a different shortcut commands - not your usual ctrl-c/ctrl-v. This shit got different commands. Here it is ctrl+insert/shift+insert. By the way those commands sometimes cut the session, so you got to start it again.
+	4. Ok you got both ids copied and command executed. Well here its the same as with log - you can scroll only via arrows and page up/down. Id doesnt show the whole thing so you first have to scroll through it. 
+	5. git diff is good for absolutely nothing unless you first execute command git config --global color.ui auto. Only then you can see changes - green for added code red for deleted.
+
+git checkout *id* - return to previous commit (snapshot) within repository
+
+How might using version control make you more confident to make changes that could break something?
+	Well because you can always revert to older version where the bug was not yet introduced, it removes risk of a fatal mistake that would break the program.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+	Like hell I want to use that piece of crap. Total commander is ten times better faster and more effective. Unfortunately it does lack ability to browse versions so tought luck Iam stuck with this junk. Only reason I actually use it is to move forward with course about developing android apps. 
+
+other commands
+	mk - create a directory or ?file?
+	mv - move directory or file
+	ls - list all items in directory
+	las -a - list all items including hidden files (.file)
+	pwd - current path
+	mkdir - create a directory
+	subl *filename* - opens sublime editor with new filename
+	diff -u file file - difference between two files
+	scp - secure copy - making copy of directory from somone elses computer
+
+	003c8c197cd3b1e5b28b58f53ee14d7ebaa9bb3a
+	746f762e38b5bbb7d0b837464ef6ec3f8ee5bf91
